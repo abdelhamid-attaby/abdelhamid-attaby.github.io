@@ -1,4 +1,4 @@
-import { cv, LINKS } from '@/content/cv';
+import { asset, cv, LINKS } from '@/content/cv';
 
 export default function Hero() {
   return (
@@ -33,7 +33,7 @@ export default function Hero() {
                 {/* Replace portrait.jpg with the face crop. object-position is
                     tuned for a head-and-shoulders frame. */}
                 <img
-                  src="/portrait.jpg"
+                  src={asset('/portrait.jpg')}
                   alt="Abdelhamid Attaby, Senior Software Engineer"
                   width={640}
                   height={800}

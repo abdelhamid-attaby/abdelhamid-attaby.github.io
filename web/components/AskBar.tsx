@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Thread from './Thread';
 import { useChat } from './useChat';
+import { asset } from '@/content/cv';
 
 /**
  * A slim bar pinned to the bottom of every page. Quiet by default; asking a
@@ -93,7 +94,7 @@ export default function AskBar() {
                 {Math.max(0, quota.limit - quota.used)} left today
               </span>
             ) : (
-              <a className="askbar-toggle" href="/chat/">
+              <a className="askbar-toggle" href={asset('/chat/')}>
                 Open full page
               </a>
             )}

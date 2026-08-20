@@ -32,8 +32,20 @@ export const LINKS = {
   toptal: 'https://www.toptal.com/developers/resume/abdelhamid-awad-abdelhamid-attaby#NV1dgj',
 };
 
+/**
+ * The site is served from the domain root, so BASE_PATH is empty and `asset()`
+ * is a no-op today. It exists because the moment the repo is renamed, Pages
+ * starts serving from /<repo-name>/ and every hand-written path — an <img
+ * src>, an <a href> to another page, the CV download — 404s in production
+ * while still working perfectly in dev. Routing it all through one helper
+ * means that rename is a one-line change instead of a bug hunt.
+ */
+export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
+export const asset = (path: string) => `${BASE_PATH}${path}`;
+
 export const SITE = {
-  url: 'https://abdelhamid-attaby.github.io',
+  url: `https://abdelhamid-attaby.github.io${BASE_PATH}`,
   title: 'Abdelhamid Attaby — Senior Software Engineer, Ph.D.',
   description:
     'Senior software engineer with 15+ years building large-scale systems, including two years at GitHub (Microsoft). Twice CTO. Now building production multi-agent AI systems. Ask my CV anything.',

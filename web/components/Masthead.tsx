@@ -1,3 +1,5 @@
+import { asset } from '@/content/cv';
+
 const SECTIONS = [
   { href: '#about', label: 'About' },
   { href: '#skills', label: 'Skills' },
@@ -22,7 +24,7 @@ export default function Masthead() {
             ))}
           </nav>
 
-          <a className="nav-cv" href="/cv.pdf" download>
+          <a className="nav-cv" href={asset('/cv.pdf')} download>
             Download CV
           </a>
         </div>

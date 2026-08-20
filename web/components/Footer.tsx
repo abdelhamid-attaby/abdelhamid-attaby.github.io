@@ -1,4 +1,4 @@
-import { LINKS } from '@/content/cv';
+import { asset, LINKS } from '@/content/cv';
 import ToptalBadge from './ToptalBadge';
 
 export default function Footer() {
@@ -20,7 +20,7 @@ export default function Footer() {
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="/chat/">Ask my CV</a>
+            <a href={asset('/chat/')}>Ask my CV</a>
           </div>
 
           <div className="footer-links">

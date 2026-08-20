@@ -121,10 +121,21 @@ Set as a **repository variable**, not a secret (it ends up in the bundle):
 **Front end.** Settings → Pages → Source: *GitHub Actions*. Push to `main`;
 `.github/workflows/deploy.yml` builds `web/` and publishes it.
 
-The repo must stay named `abdelhamid-attaby.github.io` so Pages serves from the
-domain root. Under any other name Pages serves from `/repo-name/`, and every
-asset path needs a `basePath` — set `BASE_PATH` in the workflow if you ever
-rename it.
+**Keep the repo named `abdelhamid-attaby.github.io`.** Only a repo matching
+`<username>.github.io` is served from the domain root; under any other name
+Pages serves it from `/<repo-name>/`.
+
+That is not just cosmetic. `robots.txt` is only ever fetched from the origin
+root — a crawler reads `https://host/robots.txt` and nothing else, so on a
+project site the `robots.txt` and `llms.txt` in `web/public/` are never read
+and the sitemap has to be submitted by hand. The clean URL and the absence of a
+path prefix are the smaller wins.
+
+If it does get renamed: set `BASE_PATH` (e.g. `BASE_PATH=/cv`) in the build
+step. `basePath` covers routing and framework assets; the `asset()` helper in
+`web/content/cv.ts` covers the hand-written `<img src>` and `<a href>` paths
+that `basePath` does not rewrite. Both read the same value, so it is a one-line
+change — but the SEO files stay broken regardless.
 
 **API.** Import the repo into Vercel with **Root Directory** set to `api`. Add
 the environment variables above, deploy, then check `/api/health` — it reports
