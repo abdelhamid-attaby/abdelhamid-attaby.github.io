@@ -81,7 +81,7 @@ export async function openStream(
         'Content-Type': 'application/json',
         // OpenRouter uses these for attribution on its dashboard.
         'HTTP-Referer': process.env.ALLOWED_ORIGIN?.split(',')[0] ?? '',
-        'X-Title': 'Abdelhamid Attaby — CV assistant',
+        'X-Title': 'Abdelhamid Attaby - CV assistant',
       },
       body: JSON.stringify({
         model,
