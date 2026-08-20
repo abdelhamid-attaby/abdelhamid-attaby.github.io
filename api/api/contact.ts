@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { applyCors, clientIp } from '../lib/cors';
-import { hashIp } from '../lib/rateLimit';
-import { db } from '../lib/mongo';
+import { applyCors, clientIp } from '../lib/cors.js';
+import { hashIp } from '../lib/rateLimit.js';
+import { db } from '../lib/mongo.js';
 
 const MAX = { name: 120, email: 200, message: 4000 };
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;

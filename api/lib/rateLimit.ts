@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { db } from './mongo';
+import { db } from './mongo.js';
 
 /**
  * Two limits, both enforced here rather than at OpenRouter.

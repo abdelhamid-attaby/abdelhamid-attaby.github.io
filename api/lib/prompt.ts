@@ -1,4 +1,4 @@
-import rawCv from './cv_data.json';
+import rawCv from './cv_data.json' with { type: 'json' };
 
 /**
  * The CV is ~11 KB, about 3,000 tokens. That is small enough to hand the model

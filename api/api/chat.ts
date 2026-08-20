@@ -1,9 +1,9 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { applyCors, clientIp } from '../lib/cors';
-import { consume, hashIp, refund } from '../lib/rateLimit';
-import { deltas, openStream } from '../lib/openrouter';
-import { normaliseMessages, SYSTEM_PROMPT } from '../lib/prompt';
-import { db } from '../lib/mongo';
+import { applyCors, clientIp } from '../lib/cors.js';
+import { consume, hashIp, refund } from '../lib/rateLimit.js';
+import { deltas, openStream } from '../lib/openrouter.js';
+import { normaliseMessages, SYSTEM_PROMPT } from '../lib/prompt.js';
+import { db } from '../lib/mongo.js';
 
 export const config = { maxDuration: 30 };
 

@@ -2,6 +2,7 @@
   "name": "attaby-api",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Serverless API for abdelhamid-attaby.github.io — OpenRouter proxy, rate limiting, contact form",
   "dependencies": {
     "mongodb": "^6.13.0"

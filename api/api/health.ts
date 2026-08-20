@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { db } from '../lib/mongo';
+import { db } from '../lib/mongo.js';
 
 /** Cheap liveness check — confirms config and database reachability. */
 export default async function handler(_req: VercelRequest, res: VercelResponse) {
