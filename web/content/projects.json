@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Flowdia",
+    "subtitle": "Multi-agent application platform",
+    "role": "Founding Engineer",
+    "period": "2025 — present",
+    "description": "A platform where a team of specialised AI agents plans, designs, builds and ships production web apps end to end, each with a real backend, a dedicated PostgreSQL database and APIs. I build the agent orchestration and LLM integration layer, and the system that turns natural-language product intent into deployed applications with memory that persists across sessions.",
+    "stack": ["Elixir", "TypeScript", "Node.js", "PostgreSQL", "Agent orchestration", "LLM APIs"],
+    "links": [{ "label": "flowdia.ai", "href": "https://flowdia.ai" }]
+  },
+  {
+    "title": "GitHub Projects",
+    "subtitle": "Planning and tracking, at GitHub scale",
+    "role": "Senior Software Engineer, Memex team",
+    "period": "2021 — 2023",
+    "description": "The planning and tracking experience used by organisations and developers worldwide. I shipped saved views, user-owned projects, the project GraphQL APIs, fast issues, the iterations field and the issue sidebar — inside the github/github monolith, alongside large-scale performance work and distributed data migrations across hundreds of millions of records.",
+    "stack": ["Ruby on Rails", "Go", "GraphQL", "React", "TypeScript", "MobX"],
+    "links": [{ "label": "github.com/features/issues", "href": "https://github.com/features/issues" }]
+  },
+  {
+    "title": "Bardy",
+    "subtitle": "Visual feedback and collaboration",
+    "role": "Co-founder",
+    "period": "2023 — 2025",
+    "description": "Comment directly on live websites, videos, PDFs and images, edit HTML and CSS in place, and capture screenshots automatically — delivered as a web app and a Chrome extension on a multi-tenant SaaS. Built end to end as one of two co-founders. We wound the company down in late 2025 when traction did not materialise.",
+    "stack": ["Elixir", "React", "Chrome Extension", "AWS Lambda", "Terraform"],
+    "links": []
+  },
+  {
+    "title": "Grow Healthy",
+    "subtitle": "Healthcare logistics platform",
+    "role": "Technical Team Lead",
+    "period": "2019 — 2020",
+    "description": "Led the frontend and backend teams building and deploying a healthcare delivery platform. Order processing ran on Firestore, Scheduler, Pub/Sub and Cloud Functions, with Twilio, OnFleet, Zendesk and Google Maps integrated, Jest unit and end-to-end coverage, and automated deployments through GitHub Actions.",
+    "stack": ["Node.js", "Google Cloud", "Firestore", "Pub/Sub", "Twilio"],
+    "links": []
+  },
+  {
+    "title": "WiPi",
+    "subtitle": "Remotely-accessible wireless testbed",
+    "role": "Doctoral research",
+    "period": "2018 — 2019",
+    "description": "A low-cost, large-scale, heterogeneous wireless network testbed that researchers could access remotely to run next-generation network experiments. The core of my doctoral work, published in IEEE Access and presented at IEEE VTC.",
+    "stack": ["Computer networks", "Linux", "Python", "Distributed systems"],
+    "links": []
+  },
+  {
+    "title": "This site",
+    "subtitle": "A CV you can ask questions",
+    "role": "Personal project",
+    "period": "2026",
+    "description": "Statically exported to GitHub Pages, with a serverless API on Vercel that proxies OpenRouter so the key never reaches the browser. MongoDB enforces per-visitor and site-wide rate limits, and every answer is grounded strictly in this CV — if something is not in it, the assistant says so rather than inventing it.",
+    "stack": ["Next.js", "GitHub Pages", "Vercel Functions", "MongoDB", "OpenRouter"],
+    "links": [{ "label": "Source", "href": "https://github.com/abdelhamid-attaby/abdelhamid-attaby.github.io" }]
+  }
+]

@@ -1,0 +1,191 @@
+{
+  "meta": {
+    "name": "Abdelhamid Attaby",
+    "credential": "Ph.D.",
+    "title": "Senior Software Engineer",
+    "tagline": "Distributed Systems · Technical Leadership · AI & Agent Engineering",
+    "location": "New Cairo, Egypt",
+    "remote": "Remote · any timezone",
+    "email": "abdelhamid.attaby@gmail.com",
+    "phone": "+201004115402",
+    "linkedin": "https://www.linkedin.com/in/abdelhamidattaby/",
+    "github": "https://github.com/abdelhamid-attaby",
+    "scholar": "Google Scholar · 124 citations",
+    "scholar_url": "https://scholar.google.com/"
+  },
+  "stats": [
+    { "value": "15+", "label": "Years engineering" },
+    { "value": "2x", "label": "CTO" },
+    { "value": "2 yrs", "label": "GitHub (Microsoft)" },
+    { "value": "124", "label": "Scholar citations" }
+  ],
+  "about": "Senior software engineer with 15+ years building, shipping, and operating medium-to-large-scale applications, including two years at GitHub (Microsoft) contributing to one of the world's largest monolithic codebases. Since 2023, I've channeled that experience into startups and applied AI — co-founding an early-stage venture and serving as a founding engineer on a multi-agent AI application platform — building production agentic-AI products hands-on. Full-stack strength across Node.js, TypeScript, Ruby on Rails, React, Go, and Elixir, with deep experience in microservices, distributed systems, API design, and CI/CD, and a daily AI-assisted engineering practice. A proven technical leader — twice CTO — who has architected platforms, led engineering teams, and mentored engineers from early-career to senior. I hold M.Sc. and Ph.D. degrees in Computer Science and Engineering and am pursuing an MBA (AAST).",
+  "strengths": [
+    {
+      "icon": "network",
+      "title": "Distributed systems & APIs at scale",
+      "body": "Built the GraphQL APIs behind GitHub Projects; ran performance work and data migrations across hundreds of millions of records."
+    },
+    {
+      "icon": "stack",
+      "title": "Full-stack product engineering",
+      "body": "A decade of production Node.js/TypeScript, React, Ruby on Rails, Go, and Python across fintech, healthcare, and developer tools."
+    },
+    {
+      "icon": "lead",
+      "title": "Technical leadership",
+      "body": "CTO twice, tech lead twice; hired, mentored, and ran engineering teams end-to-end, from architecture to delivery."
+    },
+    {
+      "icon": "ai",
+      "title": "AI & agent engineering",
+      "body": "Builds production agent workflows daily — autonomous research agents, scheduled tasks, tool integrations — and ships with LLM-assisted development."
+    }
+  ],
+  "skills": {
+    "Languages": ["JavaScript", "TypeScript", "Python", "Go", "Ruby", "Elixir", "PHP", "C#"],
+    "Backend": ["Node.js", "Express", "NestJS", "Phoenix (Elixir)", "Ruby on Rails", "Django", "Flask", "Laravel", "REST", "GraphQL", "Socket.IO", "Stripe", "Twilio"],
+    "Frontend": ["React", "Next.js", "React Native", "Android", "Redux", "MobX", "HTML5", "CSS3"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "Microsoft SQL", "Redis", "Firebase", "Firestore"],
+    "Cloud & DevOps": ["AWS", "Google Cloud", "Azure", "Docker", "Kubernetes", "Terraform", "Serverless", "Nginx", "Cloudflare", "CI/CD", "Datadog", "Sentry", "Linux"],
+    "AI / LLM": ["Claude", "Claude Code", "Claude API", "LLM APIs", "AI agents & agentic AI", "Agent orchestration", "Agentic coding", "LLM-assisted engineering"],
+    "Practices": ["Microservices", "Event-driven systems", "Kafka", "RabbitMQ", "NATS", "Pub/Sub", "Protobuf", "SaaS", "Software architecture", "Automated testing", "Agile/Scrum", "Mentoring"]
+  },
+  "experience": [
+    {
+      "role": "Founding Engineer",
+      "company": "Flowdia",
+      "url": "https://flowdia.ai",
+      "period": "Dec 2025 – Present",
+      "context": "Remote · AI Application Platform",
+      "bullets": [
+        "Founding engineer on an AI application platform where a team of specialized AI agents plans, designs, builds, and ships production web apps end-to-end — each with a real backend, dedicated PostgreSQL database, and APIs.",
+        "Building the core product hands-on across an Elixir and TypeScript/Node.js stack: agent orchestration, LLM integration, and the services behind the multi-agent build-and-ship pipeline.",
+        "Engineering the system that turns natural-language product intent into deployed, production-ready applications with persistent project memory across sessions."
+      ]
+    },
+    {
+      "role": "Co-founder",
+      "company": "Bardy",
+      "url": "",
+      "period": "May 2023 – Dec 2025",
+      "context": "Remote · SaaS",
+      "bullets": [
+        "Co-founded an early-stage SaaS startup building a real-time visual feedback and collaboration platform — comment directly on live websites, videos, PDFs, and images, edit HTML/CSS in place, and auto-capture screenshots, delivered via web app and a Chrome extension.",
+        "Built the product end-to-end as one of two co-founders: Elixir backend services and proxy, JavaScript/React frontend and Chrome extension, a TypeScript screenshot service on AWS Lambda, all provisioned with Terraform.",
+        "Owned product and engineering direction across a multi-tenant SaaS; made the disciplined decision to wind the company down in late 2025, carrying the learnings directly into AI product engineering."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "GitHub (Microsoft)",
+      "url": "",
+      "period": "Apr 2021 – Apr 2023",
+      "context": "Remote",
+      "bullets": [
+        "Built and shipped GitHub Projects — the planning-and-tracking experience used by organizations and developers worldwide — as part of the Memex team.",
+        "Contributed across the github/github monolith, one of the world's largest codebases, working with three engineering teams (Projects, Special Projects/Runtime, internal engineering documentation platform).",
+        "Delivered saved views, user-owned projects, the project GraphQL APIs, fast issues, the iterations field, and the issue sidebar.",
+        "Worked on large-scale performance, distributed data migrations, and platform reliability using Ruby on Rails, Go, React, TypeScript, and MobX."
+      ]
+    },
+    {
+      "role": "VP of Engineering",
+      "company": "Wuilt",
+      "url": "",
+      "period": "Sep 2021 – Sep 2022",
+      "context": "Remote · SaaS / Website Builder",
+      "bullets": [
+        "Set engineering strategy and technical direction at a regional SaaS/website-building company, partnering with leadership on roadmap and execution.",
+        "Architected core platforms from the ground up and established engineering standards, delivery processes, and CI/CD.",
+        "Built and scaled the engineering team through hiring, mentoring, and code review."
+      ]
+    },
+    {
+      "role": "Chief Technology Officer",
+      "company": "Aster",
+      "url": "",
+      "period": "Aug 2020 – Sep 2021",
+      "context": "Remote · Fintech",
+      "bullets": [
+        "Led the engineering team to deliver product requirements; set technical strategy and direction with leadership; owned the team budget and tooling.",
+        "Architected the backend on a microservices model and built APIs aggregating users' wealth into dashboards and charts.",
+        "Integrated numerous third-party financial APIs to extend platform capability."
+      ]
+    },
+    {
+      "role": "Senior Consultant",
+      "company": "Andela",
+      "url": "",
+      "period": "Jan 2020 – Aug 2020",
+      "context": "Remote",
+      "bullets": [
+        "Senior engineer for Simple Habit, Inc. (San Francisco), shipping a high-quality meditation product through engineering best practices.",
+        "Designed and conducted technical interviews for senior and principal candidates; mentored mid-level and senior engineers."
+      ]
+    },
+    {
+      "role": "Technical Team Lead",
+      "company": "Pocketmade LLC (via Toptal)",
+      "url": "",
+      "period": "Feb 2019 – Apr 2020",
+      "context": "Remote · Healthcare logistics",
+      "bullets": [
+        "Led frontend and backend teams building and deploying the Grow Healthy platform, integrating multiple systems and APIs.",
+        "Integrated Twilio, OnFleet, Zendesk, and Google Maps; built order processing on Google Firestore, Scheduler, Pub/Sub, and Cloud Functions.",
+        "Authored unit and end-to-end tests with Jest; automated deployments with GitHub Actions."
+      ]
+    },
+    {
+      "role": "Co-founder & Chief Technology Officer",
+      "company": "Coligo Technologies",
+      "url": "",
+      "period": "Dec 2016 – Dec 2019",
+      "context": "Cairo, Egypt · EdTech",
+      "bullets": [
+        "Co-founded an EdTech company and designed the core architecture of its learning management system.",
+        "Directed cross-platform engineering across web, Android, and iOS through an Agile process.",
+        "Built fully automated CI/CD pipelines on CircleCI for containerized applications using Docker, Netlify, and AWS."
+      ]
+    },
+    {
+      "role": "Software Technical Lead",
+      "company": "So Visions",
+      "url": "",
+      "period": "Mar 2014 – Nov 2016",
+      "context": "Cairo, Egypt",
+      "bullets": [
+        "Led a team building enterprise Odoo (OpenERP) modules and a RESTful API server integrating Odoo with third-party applications.",
+        "Established team-wide engineering workflows and CI/CD pipelines on CircleCI using Docker and DigitalOcean."
+      ]
+    },
+    {
+      "role": "Earlier Experience",
+      "company": "Toptal · So Visions · Arabia Inform",
+      "url": "",
+      "period": "2011 – 2019",
+      "context": "",
+      "bullets": [
+        "Node.js Back-end Engineer (BeatFlyer, via Toptal, 2019): built RESTful APIs for a fleet-management platform with multiple authentication schemes and Jest coverage.",
+        "Software Engineer (So Visions, 2012–2014): developed accounting, purchasing, inventory, and sales modules of a full ERP system.",
+        "Software Engineer (Arabia Inform, 2011–2012): built backend crawlers using the Twitter Search and YouTube Data APIs."
+      ]
+    }
+  ],
+  "education": [
+    { "degree": "MBA in Business Administration", "school": "Arab Academy for Science, Technology & Maritime Transport (AAST), Cairo", "period": "In progress — expected 2027" },
+    { "degree": "Ph.D. in Computer Science and Engineering", "school": "Egypt-Japan University of Science and Technology (E-JUST)", "period": "2016 – 2019" },
+    { "degree": "M.Sc. in Computer Engineering", "school": "Benha University", "period": "2010 – 2015" },
+    { "degree": "B.Sc. in Computer Engineering (Very Good; ranked 2nd in class)", "school": "Faculty of Engineering at Shoubra, Benha University", "period": "2004 – 2009" }
+  ],
+  "publications": {
+    "intro": "Peer-reviewed work in wireless network testbeds and applied data security (124 citations, Google Scholar):",
+    "items": [
+      "WiPi: A Low-Cost Large-Scale Remotely-Accessible Network Testbed. IEEE Access, 7 (2019).",
+      "WiPi: A Low-Cost Heterogeneous Wireless Testbed for Next Generation Applications. IEEE VTC Spring (2018).",
+      "Data Hiding Inside JPEG Images with High Resistance to Steganalysis (DCT-M3). Ain Shams Engineering Journal, 9(4) (2018)."
+    ],
+    "interests": "Research interests: software engineering and large-scale distributed systems; computer networks and security; artificial intelligence (LLM-based and agentic systems)."
+  },
+  "certifications": ["Cisco Certified Network Professional (CCNP)", "CCNA", "Moving from Developer to Engineering Manager", "Managing Technical Professionals"]
+}
