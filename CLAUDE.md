@@ -84,11 +84,19 @@ procedure if it ever changes.
   .h`) and `#r`. `ToptalBadge.tsx` scopes them. Do not un-scope it.
 - The Pages workflow only fires on `web/**` changes. API edits deploy through
   Vercel's own git integration.
+- `check-export.mjs` only scans textual files (html/js/css/json/...) — it does
+  **not** open PDFs. `web/public/cv.pdf` is a manually redacted derivative of
+  the master CV (see below); the gate would not catch contact info reappearing
+  in it if someone dropped the raw master in as-is.
 
 ## Open items
 
-- `web/public/cv.pdf` is missing — decide full vs contact-stripped, since it is
-  public.
+- `web/public/cv.pdf` is a contact-stripped copy of
+  `cv/Abdelhamid_Attaby_Staff_Software_Engineer_CV.pdf` (from the parent `my-cv`
+  project) — email and phone redacted from the header (PyMuPDF redaction, true
+  removal not a visual cover), LinkedIn/GitHub/Scholar kept. It is **not**
+  regenerated automatically: if the master CV changes, re-redact and replace
+  it by hand.
 - `meta.scholar_url` in `cv_data.json` points at scholar.google.com generally,
   not his profile.
 - The OpenRouter key was pasted into a chat on 20 Aug 2026 and should be
