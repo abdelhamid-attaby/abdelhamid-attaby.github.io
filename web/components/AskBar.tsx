@@ -49,12 +49,22 @@ export default function AskBar() {
         <div className="panel" ref={panel} role="region" aria-label="CV assistant">
           <div className="shell">
             <div className="panel-in">
-              <Thread
-                messages={messages}
-                streaming={streaming}
-                error={error}
-                onAsk={askSuggested}
-              />
+              <div className="win">
+                <div className="win-bar">
+                  <div className="win-dots">
+                    <span /><span /><span />
+                  </div>
+                  <span className="win-title">cv-assistant — zsh</span>
+                </div>
+                <div className="win-body">
+                  <Thread
+                    messages={messages}
+                    streaming={streaming}
+                    error={error}
+                    onAsk={askSuggested}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,6 +81,7 @@ export default function AskBar() {
               <label htmlFor="askbar-input" className="skip">
                 Ask a question about Abdelhamid&rsquo;s experience
               </label>
+              <span className="askbar-prompt" aria-hidden="true">$</span>
               <input
                 id="askbar-input"
                 value={draft}

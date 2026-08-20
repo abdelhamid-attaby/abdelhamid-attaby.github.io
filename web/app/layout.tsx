@@ -4,8 +4,7 @@ import { cv, LINKS, SITE } from '@/content/cv';
 // Fonts are self-hosted through Fontsource rather than fetched from Google.
 // Two reasons: the site keeps working with no third-party request on every
 // page load, and GitHub Pages serves the woff2 files straight off its own CDN.
-import '@fontsource-variable/archivo';
-import '@fontsource-variable/source-serif-4';
+import '@fontsource-variable/jetbrains-mono';
 import './globals.css';
 
 export const metadata: Metadata = {

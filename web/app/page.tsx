@@ -18,27 +18,27 @@ export default function Home() {
       <main id="main">
         <Hero />
 
-        <Section id="about" label="About">
+        <Section id="about" label="About" file="about.md">
           <About />
         </Section>
 
-        <Section id="skills" label="Skills" alt>
+        <Section id="skills" label="Skills" file="skills.json" alt>
           <Skills />
         </Section>
 
-        <Section id="experience" label="Experience">
+        <Section id="experience" label="Experience" file="experience.log">
           <Experience />
         </Section>
 
-        <Section id="projects" label="Projects" alt>
+        <Section id="projects" label="Projects" file="projects/" alt>
           <Projects />
         </Section>
 
-        <Section id="research" label="Research &amp; education">
+        <Section id="research" label="Research &amp; education" file="research.bib">
           <Research />
         </Section>
 
-        <Section id="contact" label="Contact" alt>
+        <Section id="contact" label="Contact" file="contact.sh" alt>
           <Contact />
         </Section>
       </main>

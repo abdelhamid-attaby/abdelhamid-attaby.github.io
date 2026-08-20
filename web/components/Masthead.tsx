@@ -15,6 +15,9 @@ export default function Masthead() {
       <div className="shell">
         <div className="masthead-in">
           <a href="#top" className="wordmark">
+            <span className="avatar">
+              <img src={asset('/portrait.jpg')} alt="" width={30} height={30} />
+            </span>
             Abdelhamid Attaby <span>Ph.D.</span>
           </a>
 

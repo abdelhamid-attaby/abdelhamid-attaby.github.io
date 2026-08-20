@@ -16,10 +16,15 @@ api/   Vercel functions          →  Vercel        →  reads OPENROUTER_API_KE
 ## Commands
 
 ```bash
-cd web && npm run dev      # localhost:3000 — runs the content step first
-cd web && npm run build    # static export to web/out/ + the leak check
-cd api && npx vercel dev   # functions on localhost:3000
+cd web && npm run dev                   # localhost:3000 — runs the content step first
+cd web && npm run build                 # static export to web/out/ + the leak check
+cd api && npx vercel dev --listen 3001  # functions on localhost:3001 (3000 is taken by web)
 ```
+
+For the local chat widget to reach the local API, `web/.env.local` needs
+`NEXT_PUBLIC_API_BASE=http://localhost:3001` and `api/.env.local` needs
+`ALLOWED_ORIGIN=http://localhost:3000` (plus the secrets below). Both files
+are gitignored.
 
 `npm run build` runs `scripts/build-content.mjs` before and
 `scripts/check-export.mjs` after. Do not bypass either.
@@ -49,12 +54,16 @@ budget. Check `api/lib/rateLimit.ts` before proposing one.
 breaks the site silently. `api/lib/openrouter.ts` resolves the chain at runtime
 against `/api/v1/models` filtered to `pricing.prompt === "0"`.
 
-**5. Design constraints are not preferences.** No shadows, no gradients, no
-border-radius above 2px, no icon glyphs, structure from rules and the grid
-rather than cards. They are documented at the top of `web/app/globals.css` and
-they are why the site does not read as machine-generated. A change that
-reintroduces a drop-shadowed card has failed the brief regardless of how it
-looks on its own.
+**5. Design constraints are not preferences.** As of 2026-08-20 the site is a
+"modern dev terminal" theme: one monospace family (JetBrains Mono) for
+everything, a dark canvas, one accent colour (`--accent`, terminal green), and
+`.win` (title bar + traffic lights + body) as the *only* sanctioned structural
+device besides the 12-column grid and hairline rules — never a drop-shadowed
+card. Border-radius is otherwise still disallowed outside window chrome, the
+avatar circle, and small controls (buttons/inputs, ≤4px). Constraints are
+documented at the top of `web/app/globals.css`. (This replaced an earlier
+light-paper/serif editorial theme — see git history around that date if you
+need the previous rule set.)
 
 **6. Only claim what the CV evidences.** Skills and bullets come from
 `cv_data.json`. Do not add a technology to the skills table because it would
@@ -78,7 +87,6 @@ procedure if it ever changes.
 
 ## Open items
 
-- `web/public/portrait.jpg` is a placeholder awaiting the real photo.
 - `web/public/cv.pdf` is missing — decide full vs contact-stripped, since it is
   public.
 - `meta.scholar_url` in `cv_data.json` points at scholar.google.com generally,

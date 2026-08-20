@@ -45,7 +45,7 @@ export default function Thread({ messages, streaming, error, onAsk, emptyState }
         const last = i === messages.length - 1;
         return (
           <div className={m.role === 'user' ? 'turn q' : 'turn'} key={i}>
-            <div className="turn-who">{m.role === 'user' ? 'You asked' : 'The CV'}</div>
+            <div className="turn-who">{m.role === 'user' ? 'you' : 'cv'}</div>
             <div
               className={
                 streaming && last && m.role === 'assistant' ? 'turn-body caret' : 'turn-body'
