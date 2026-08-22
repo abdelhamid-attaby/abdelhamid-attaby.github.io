@@ -37,12 +37,6 @@ export const IconFolder = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export const IconStar = (p: SVGProps<SVGSVGElement>) => (
-  <svg {...base} {...p}>
-    <polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9" />
-  </svg>
-);
-
 export const IconBook = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...p}>
     <path d="M4 4.5A2.5 2.5 0 016.5 2H20v18H6.5A2.5 2.5 0 004 17.5v-13z" />
@@ -157,12 +151,6 @@ export const IconBriefcase = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base} {...p}>
     <rect x="2" y="7" width="20" height="14" rx="2" />
     <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-  </svg>
-);
-
-export const IconChevronRight = (p: SVGProps<SVGSVGElement>) => (
-  <svg {...base} {...p}>
-    <polyline points="9 18 15 12 9 6" />
   </svg>
 );
 
