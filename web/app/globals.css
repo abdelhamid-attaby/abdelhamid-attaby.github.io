@@ -1,39 +1,39 @@
 /* ============================================================
    attaby — design system
-   Modern dev terminal: dark canvas, one monospace family, content
-   framed as terminal windows (title bar + traffic lights).
+   Restrained dark IDE: dark canvas, one monospace family, content
+   framed as plain bordered panels — no title bars, no repeated
+   terminal chrome. The chat is the one place that keeps a header
+   and status dot, since it is the interactive surface, not content.
    Deliberate constraints (do not break them casually):
      · one font family, monospace, everywhere
-     · structure comes from .win windows and hairline rules, never
-       from drop-shadowed cards
-     · one accent colour, used sparingly
-     · window chrome (border-radius, traffic lights) is the one
-       place radius and colour dots are allowed — do not spread
-       rounded corners or extra colours beyond it
+     · structure comes from .panel (a hairline border, no header row)
+       and the grid — never a drop-shadowed card
+     · one accent colour (a neutral blue, not the old terminal green),
+       used sparingly
+     · no decorative prompt glyphs (//, ~/, $, #, >) outside the chat
+       — that repetition is what read as templated, not the mono font
+         itself
    ============================================================ */
 
 @font-face { font-display: swap; }
 
 :root {
   /* --- colour --------------------------------------------------
-     window body is slightly lighter than the page canvas so windows
-     read as panels floating on the canvas, the way a real terminal
-     app sits on a desktop background.                              */
+     panel body is slightly lighter than the page canvas so panels
+     read as surfaces sitting on the canvas, without needing a
+     shadow to separate them.                                      */
   --bg:          #090c10;
   --bg-alt:      #0c0f14;   /* alternating section wash */
-  --win-bg:      #0d1117;
-  --win-bar:     #161b22;
+  --panel-bg:    #0d1117;
+  --panel-bar:   #12161d;   /* chat header only */
   --border:      #262c36;
   --border-soft: #1b2129;
   --ink:         #e6edf3;   /* primary text */
-  --ink-2:       #9aa4b2;   /* secondary / body text — 7.5:1 on win-bg */
-  --ink-3:       #7a8592;   /* labels, eyebrows — 5.0:1 on win-bg */
+  --ink-2:       #9aa4b2;   /* secondary / body text — 7.5:1 on panel-bg */
+  --ink-3:       #7a8592;   /* labels, eyebrows — 5.0:1 on panel-bg */
   --ink-4:       #454c56;   /* decorative only */
-  --accent:      #39d98a;   /* terminal green — 10.3:1 on win-bg */
-
-  --dot-red:    #ff5f56;
-  --dot-yellow: #ffbd2e;
-  --dot-green:  #27c93f;
+  --accent:      #58a6ff;   /* neutral blue — 7.5:1 on panel-bg */
+  --online:      #3fb950;   /* chat status dot only */
 
   /* --- type -------------------------------------------------- */
   --mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace;
@@ -41,8 +41,8 @@
   /* --- measure ----------------------------------------------- */
   --gutter: 32px;
   --max: 1280px;
-  --bar-h: 56px;
-  --win-radius: 8px;
+  --bar-h: 64px;
+  --panel-radius: 6px;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -101,12 +101,12 @@ input, textarea { font: inherit; color: inherit; }
    type scale
    ============================================================ */
 .eyebrow {
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: .02em;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
   color: var(--ink-3);
 }
-.eyebrow::before { content: "// "; color: var(--ink-4); }
 
 h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 
@@ -154,32 +154,18 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 .rule-accent { width: 46px; height: 2px; background: var(--accent); border: 0; margin: 0; }
 
 /* ============================================================
-   terminal window chrome
-   the one structural primitive besides the grid: a title bar with
-   traffic lights and a filename-style title, a body with padding.
+   panel
+   the one structural primitive besides the grid: a hairline border,
+   a slightly raised background, a padded body. No header row — that
+   was the terminal theme's mistake, repeating the same title bar on
+   every section until it read as a template rather than a person.
    ============================================================ */
-.win {
+.panel {
   border: 1px solid var(--border);
-  border-radius: var(--win-radius);
-  background: var(--win-bg);
-  overflow: hidden;
+  border-radius: var(--panel-radius);
+  background: var(--panel-bg);
 }
-.win-bar {
-  display: flex; align-items: center; gap: 10px;
-  height: 40px; padding: 0 14px;
-  background: var(--win-bar);
-  border-bottom: 1px solid var(--border);
-}
-.win-dots { display: flex; gap: 7px; flex: 0 0 auto; }
-.win-dots span { width: 11px; height: 11px; border-radius: 50%; display: block; }
-.win-dots span:nth-child(1) { background: var(--dot-red); }
-.win-dots span:nth-child(2) { background: var(--dot-yellow); }
-.win-dots span:nth-child(3) { background: var(--dot-green); }
-.win-title {
-  flex: 1; text-align: center; margin-right: 39px;
-  font-size: 12.5px; color: var(--ink-3);
-}
-.win-body { padding: clamp(22px, 3vw, 40px); }
+.panel-body { padding: clamp(22px, 3vw, 40px); }
 
 /* ============================================================
    header
@@ -203,7 +189,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 .avatar {
   width: 30px; height: 30px; border-radius: 50%;
   border: 1px solid var(--border); overflow: hidden; flex: 0 0 auto;
-  background: var(--win-bar);
+  background: var(--panel-bar);
 }
 .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; }
 
@@ -212,7 +198,6 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
   font-size: 13.5px; color: var(--ink-2);
   padding: 4px 0; border-bottom: 1px solid transparent;
 }
-.nav a::before { content: "~/"; color: var(--ink-4); }
 .nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .nav-cv {
@@ -237,25 +222,24 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 }
 .hero-role em { font-style: normal; color: var(--ink-3); font-weight: 400; }
 
-.whoami-body { padding: clamp(18px, 2.4vw, 26px); }
-.whoami-line { display: flex; gap: 10px; font-size: 13.5px; color: var(--ink-2); padding: 7px 0; }
-.whoami-line + .whoami-line { border-top: 1px solid var(--border-soft); }
-.whoami-k { color: var(--ink-4); flex: 0 0 auto; }
-.whoami-v { color: var(--ink-2); }
-.whoami-v a { border-bottom: 1px solid var(--border); }
-.whoami-v a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.info-panel { padding: clamp(18px, 2.4vw, 26px); }
+.info-line { display: flex; gap: 10px; font-size: 13.5px; color: var(--ink-2); padding: 7px 0; }
+.info-line + .info-line { border-top: 1px solid var(--border-soft); }
+.info-k { color: var(--ink-4); flex: 0 0 auto; }
+.info-v { color: var(--ink-2); }
+.info-v a { border-bottom: 1px solid var(--border); }
+.info-v a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .avail-line { display: flex; align-items: center; gap: 8px; color: var(--ink); }
 .avail-line::before {
   content: ""; width: 6px; height: 6px; border-radius: 50%;
-  background: var(--accent); flex: 0 0 6px;
-  box-shadow: 0 0 6px var(--accent);
+  background: var(--online); flex: 0 0 6px;
 }
 
 /* ============================================================
-   stats window
+   stats panel
    ============================================================ */
-.stats-win { margin-top: 40px; }
+.stats-panel { margin-top: 40px; }
 .stats { display: grid; grid-template-columns: repeat(4, 1fr); }
 .stat { padding: 4px 0; border-left: 1px solid var(--border-soft); padding-left: 22px; }
 .stat:first-child { border-left: 0; padding-left: 0; }
@@ -331,8 +315,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
   padding-left: 18px; position: relative; line-height: 1.6;
 }
 .job li::before {
-  content: ">"; position: absolute; left: 0; top: 0;
-  color: var(--ink-4); font-size: 13px;
+  content: ""; position: absolute; left: 0; top: 9px;
+  width: 8px; height: 1px; background: var(--border);
 }
 .job li strong { color: var(--ink); font-weight: 600; }
 
@@ -340,7 +324,6 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
   margin-top: 22px; font-size: 13px; font-weight: 600;
   color: var(--accent); border-bottom: 1px solid var(--accent); padding-bottom: 2px;
 }
-.disclose::before { content: "$ "; color: var(--ink-4); }
 .disclose:hover { opacity: .8; }
 
 /* --- projects ---------------------------------------------- */
@@ -357,6 +340,27 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 .project-links { margin-top: 12px; display: flex; gap: 18px; font-size: 13px; font-weight: 600; }
 .project-links a { color: var(--accent); border-bottom: 1px solid transparent; }
 .project-links a:hover { border-bottom-color: var(--accent); }
+
+/* --- recommendations ----------------------------------------- */
+.recs { border-top: 1px solid var(--border-soft); }
+.rec {
+  display: grid; grid-template-columns: 220px 1fr; gap: 28px;
+  padding: 26px 0; border-bottom: 1px solid var(--border-soft);
+}
+.rec:last-child { border-bottom: 0; }
+.rec-person { display: flex; gap: 14px; align-items: flex-start; }
+.rec-avatar {
+  width: 42px; height: 42px; border-radius: 50%; flex: 0 0 auto;
+  background: var(--panel-bar); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; letter-spacing: -.02em; color: var(--ink-2);
+}
+.rec-name { font-size: 14px; font-weight: 700; color: var(--ink); }
+.rec-role { font-size: 12.5px; color: var(--ink-3); margin-top: 3px; }
+.rec-context { font-size: 11.5px; color: var(--ink-4); margin-top: 6px; }
+.rec-quote { font-family: var(--mono); font-size: 14px; line-height: 1.72; color: var(--ink-2); }
+.rec-quote p { margin: 0 0 .85em; }
+.rec-quote p:last-child { margin-bottom: 0; }
 
 /* --- research / education ---------------------------------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
@@ -378,7 +382,6 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
   display: block; font-size: 12px; font-weight: 600;
   color: var(--ink-3); margin-bottom: 8px;
 }
-.field label::before { content: "# "; color: var(--ink-4); }
 .field input, .field textarea {
   width: 100%; background: var(--bg); border: 1px solid var(--border);
   border-radius: 4px;
@@ -413,7 +416,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 /* ============================================================
    footer — status-bar style
    ============================================================ */
-.footer { background: var(--win-bar); border-top: 1px solid var(--border); padding: 48px 0 24px; color: var(--ink-2); }
+.footer { background: var(--panel-bar); border-top: 1px solid var(--border); padding: 48px 0 24px; color: var(--ink-2); }
 .footer a { color: var(--ink-2); }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 40px; align-items: start; }
 .footer h4 {
@@ -430,22 +433,29 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 }
 
 /* ============================================================
-   ask bar — pinned terminal prompt
+   ask bar — pinned, and deliberately the one prominent surface
+   on the page: an accent top border marks it as the interactive
+   feature, not just more content.
    ============================================================ */
 .askbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 60;
-  background: var(--win-bar); border-top: 1px solid var(--border);
+  background: var(--panel-bar); border-top: 2px solid var(--accent);
 }
 .askbar-in { display: flex; align-items: center; gap: 14px; height: var(--bar-h); }
 .askbar-label {
-  font-size: 12px; font-weight: 600;
-  color: var(--ink-3); white-space: nowrap;
+  display: flex; align-items: center; gap: 8px;
+  font-size: 13px; font-weight: 600;
+  color: var(--ink); white-space: nowrap;
 }
 .askbar-label b { color: var(--accent); font-weight: 600; }
-.askbar form { display: flex; flex: 1; align-items: center; gap: 10px; }
+.askbar form {
+  display: flex; flex: 1; align-items: center; gap: 12px;
+  background: var(--panel-bg); border: 1px solid var(--border); border-radius: 6px;
+  padding: 10px 14px;
+}
 .askbar-prompt { color: var(--accent); font-weight: 700; }
 .askbar input {
-  flex: 1; background: transparent; border: 0; font-size: 14.5px; padding: 6px 0;
+  flex: 1; background: transparent; border: 0; font-size: 14.5px; padding: 2px 0;
   color: var(--ink); font-family: var(--mono);
 }
 .askbar input:focus { outline: none; }
@@ -458,12 +468,33 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 .askbar-toggle { font-size: 12.5px; color: var(--ink-3); white-space: nowrap; }
 .askbar-toggle:hover { color: var(--accent); }
 
-.panel {
+.chat-panel {
   position: fixed; left: 0; right: 0; bottom: var(--bar-h); z-index: 59;
   background: var(--bg); border-top: 1px solid var(--border);
-  max-height: min(62vh, 620px); overflow-y: auto;
+  max-height: min(66vh, 660px); overflow-y: auto;
 }
-.panel-in { padding: 24px 0 28px; }
+.chat-panel-in { padding: 20px 0; }
+
+/* the framed chat window itself — header with a label and a live
+   status dot is the one place that keeps any chrome, since this is
+   the interactive surface the rest of the redesign points at. */
+.chat-win {
+  border: 1px solid var(--border);
+  border-radius: var(--panel-radius);
+  background: var(--panel-bg);
+  overflow: hidden;
+}
+.chat-win-bar {
+  display: flex; align-items: center; gap: 8px;
+  height: 40px; padding: 0 16px;
+  background: var(--panel-bar);
+  border-bottom: 1px solid var(--border);
+  font-size: 12.5px; font-weight: 600; color: var(--ink-2);
+}
+.status-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: var(--online); flex: 0 0 auto;
+}
+.chat-win-body { padding: clamp(18px, 2.6vw, 28px); }
 
 /* ============================================================
    chat thread
@@ -557,6 +588,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
   .job { grid-template-columns: 1fr; gap: 10px; }
   .project { grid-template-columns: 26px 1fr; gap: 14px; }
   .project-desc { grid-column: 2; margin-top: 12px; }
+  .rec { grid-template-columns: 1fr; gap: 14px; }
   .split { grid-template-columns: 1fr; gap: 36px; }
   .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -565,9 +597,8 @@ h1, h2, h3, h4 { margin: 0; font-weight: 700; letter-spacing: -.01em; }
 }
 
 @media print {
-  .askbar, .panel, .masthead { display: none; }
+  .askbar, .chat-panel, .masthead { display: none; }
   body { padding-bottom: 0; background: #fff; color: #000; }
-  .win { border-color: #ccc; }
-  .win-bar { background: #f0f0f0; }
+  .panel { border-color: #ccc; }
   .section { break-inside: avoid; }
 }

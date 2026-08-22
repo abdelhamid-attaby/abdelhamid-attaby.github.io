@@ -4,12 +4,14 @@
 // and all. See scripts/build-content.mjs for the full explanation.
 import cvPublic from './cv.public.json';
 import projectsJson from './projects.json';
+import recommendationsJson from './recommendations.json';
 
 export type Cv = typeof cvPublic;
 export type Meta = Cv['meta'];
 
 export const cv: Cv = cvPublic;
 export const projects = projectsJson;
+export const recommendations = recommendationsJson;
 
 /** Categories rendered in the skills table, in order. `lead` gets the accent. */
 export const SKILL_ORDER: { key: keyof Cv['skills']; label: string; lead?: boolean }[] = [

@@ -46,17 +46,15 @@ export default function AskBar() {
   return (
     <>
       {active && (
-        <div className="panel" ref={panel} role="region" aria-label="CV assistant">
+        <div className="chat-panel" ref={panel} role="region" aria-label="CV assistant">
           <div className="shell">
-            <div className="panel-in">
-              <div className="win">
-                <div className="win-bar">
-                  <div className="win-dots">
-                    <span /><span /><span />
-                  </div>
-                  <span className="win-title">cv-assistant — zsh</span>
+            <div className="chat-panel-in">
+              <div className="chat-win">
+                <div className="chat-win-bar">
+                  <span className="status-dot" aria-hidden="true" />
+                  CV Assistant
                 </div>
-                <div className="win-body">
+                <div className="chat-win-body">
                   <Thread
                     messages={messages}
                     streaming={streaming}
@@ -74,6 +72,7 @@ export default function AskBar() {
         <div className="shell">
           <div className="askbar-in">
             <span className="askbar-label">
+              <span className="status-dot" aria-hidden="true" />
               Ask my <b>CV</b>
             </span>
 

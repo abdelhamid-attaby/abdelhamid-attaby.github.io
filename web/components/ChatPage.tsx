@@ -38,14 +38,12 @@ export default function ChatPage() {
               hand out my contact details, so use the form on the main page.
             </p>
 
-            <div className="win" style={{ marginTop: 30 }}>
-              <div className="win-bar">
-                <div className="win-dots">
-                  <span /><span /><span />
-                </div>
-                <span className="win-title">cv-assistant — zsh</span>
+            <div className="chat-win" style={{ marginTop: 30 }}>
+              <div className="chat-win-bar">
+                <span className="status-dot" aria-hidden="true" />
+                CV Assistant
               </div>
-              <div className="win-body">
+              <div className="chat-win-body">
                 <Thread
                   messages={messages}
                   streaming={streaming}

@@ -45,12 +45,57 @@
     "links": []
   },
   {
-    "title": "This site",
-    "subtitle": "A CV you can ask questions",
-    "role": "Personal project",
-    "period": "2026",
-    "description": "Statically exported to GitHub Pages, with a serverless API on Vercel that proxies OpenRouter so the key never reaches the browser. MongoDB enforces per-visitor and site-wide rate limits, and every answer is grounded strictly in this CV — if something is not in it, the assistant says so rather than inventing it.",
-    "stack": ["Next.js", "GitHub Pages", "Vercel Functions", "MongoDB", "OpenRouter"],
-    "links": [{ "label": "Source", "href": "https://github.com/abdelhamid-attaby/abdelhamid-attaby.github.io" }]
+    "title": "Wuilt",
+    "subtitle": "SaaS website and store builder",
+    "role": "VP of Engineering",
+    "period": "2021 — 2022",
+    "description": "Set engineering strategy and technical direction at a regional SaaS website-building company, partnering with leadership on roadmap and execution. Architected core platforms from the ground up and established engineering standards, delivery processes and CI/CD, and built and scaled the engineering team through hiring, mentoring and code review.",
+    "stack": ["SaaS", "CI/CD", "Engineering leadership"],
+    "links": [{ "label": "wuilt.com", "href": "https://wuilt.com" }]
+  },
+  {
+    "title": "Aster",
+    "subtitle": "Fintech wealth-aggregation platform",
+    "role": "Chief Technology Officer",
+    "period": "2020 — 2021",
+    "description": "Led the engineering team delivering product requirements, set technical strategy with leadership, and owned the team budget and tooling. Architected the backend on a microservices model and built APIs aggregating users' wealth into dashboards and charts, integrating numerous third-party financial APIs to extend platform capability.",
+    "stack": ["Microservices", "APIs", "Fintech integrations"],
+    "links": []
+  },
+  {
+    "title": "Simple Habit",
+    "subtitle": "Meditation app (San Francisco)",
+    "role": "Senior Consultant, via Andela",
+    "period": "2020",
+    "description": "Senior engineer for Simple Habit, Inc., shipping a high-quality meditation product through engineering best practices. Also designed and conducted technical interviews for senior and principal candidates, and mentored mid-level and senior engineers.",
+    "stack": ["Consulting", "Technical interviewing", "Mentoring"],
+    "links": [{ "label": "simplehabit.com", "href": "https://simplehabit.com" }]
+  },
+  {
+    "title": "Coligo Technologies",
+    "subtitle": "EdTech learning management system",
+    "role": "Co-founder & Chief Technology Officer",
+    "period": "2016 — 2019",
+    "description": "Co-founded an EdTech company and designed the core architecture of its learning management system. Directed cross-platform engineering across web, Android and iOS through an Agile process, and built fully automated CI/CD pipelines for containerized applications.",
+    "stack": ["LMS", "Android", "iOS", "Docker", "CI/CD"],
+    "links": [{ "label": "coligotech.com", "href": "https://coligotech.com" }]
+  },
+  {
+    "title": "Zyda",
+    "subtitle": "Digital ordering and customer engagement platform",
+    "role": "Freelance Engineer",
+    "period": "",
+    "description": "Managed four development teams — checkout, product catalogs, marketing integrations, and the new storefront — for a digital ordering and customer engagement platform used by restaurants and retailers.",
+    "stack": ["E-commerce", "Team leadership"],
+    "links": [{ "label": "zyda.com", "href": "https://zyda.com/" }]
+  },
+  {
+    "title": "AYR",
+    "subtitle": "Cannabis retail, multi-brand storefronts",
+    "role": "Freelance Engineer",
+    "period": "via Toptal",
+    "description": "Participated in launching eight websites across the AYR Wellness family of cannabis retail brands, including Liberty Health Sciences, AYR New Jersey, Sira Naturals, AYR Massachusetts, and Mynt Cannabis.",
+    "stack": ["Multi-brand web launches"],
+    "links": [{ "label": "ayrdispensaries.com", "href": "https://ayrdispensaries.com/" }]
   }
 ]

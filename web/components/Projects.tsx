@@ -6,8 +6,8 @@ export default function Projects() {
       <div className="section-head">
         <h2 className="h2">Things I have built.</h2>
         <p>
-          Six pieces of work that show the range — agent platforms, developer
-          tooling at scale, a research testbed, and the site you are reading.
+          Selected work across agent platforms, fintech, EdTech, developer
+          tooling at scale, and a research testbed.
         </p>
       </div>
 
@@ -22,7 +22,7 @@ export default function Projects() {
                 {p.subtitle}
               </p>
               <p className="project-when">
-                {p.role} · {p.period}
+                {p.period ? `${p.role} · ${p.period}` : p.role}
               </p>
             </div>
 

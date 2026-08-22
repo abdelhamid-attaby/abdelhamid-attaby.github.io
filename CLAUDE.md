@@ -54,16 +54,20 @@ budget. Check `api/lib/rateLimit.ts` before proposing one.
 breaks the site silently. `api/lib/openrouter.ts` resolves the chain at runtime
 against `/api/v1/models` filtered to `pricing.prompt === "0"`.
 
-**5. Design constraints are not preferences.** As of 2026-08-20 the site is a
-"modern dev terminal" theme: one monospace family (JetBrains Mono) for
-everything, a dark canvas, one accent colour (`--accent`, terminal green), and
-`.win` (title bar + traffic lights + body) as the *only* sanctioned structural
-device besides the 12-column grid and hairline rules — never a drop-shadowed
-card. Border-radius is otherwise still disallowed outside window chrome, the
-avatar circle, and small controls (buttons/inputs, ≤4px). Constraints are
-documented at the top of `web/app/globals.css`. (This replaced an earlier
-light-paper/serif editorial theme — see git history around that date if you
-need the previous rule set.)
+**5. Design constraints are not preferences.** As of 2026-08-20 (later
+revision) the site is a "restrained dark IDE" theme: one monospace family
+(JetBrains Mono), a dark canvas, one accent colour (`--accent`, neutral blue),
+and `.panel` (hairline border + padded body, **no header row**) as the *only*
+sanctioned structural device besides the 12-column grid — never a
+drop-shadowed card. The chat (`.chat-win`) is the sole exception that keeps a
+header/status-dot and a stronger accent border, deliberately, to stay more
+visible than read-only content. Border-radius is otherwise disallowed outside
+panels, the avatar circle, and small controls (buttons/inputs, ≤4px), and
+decorative prompt glyphs (`//`, `~/`, `$`, `#`, `>`) are scoped to the chat
+only — repeating them on every section is what made an earlier same-day
+"modern dev terminal" revision read as templated. Constraints are documented
+at the top of `web/app/globals.css`. (Two earlier themes preceded this one —
+see git history around 2026-08-20 if you need either rule set.)
 
 **6. Only claim what the CV evidences.** Skills and bullets come from
 `cv_data.json`. Do not add a technology to the skills table because it would

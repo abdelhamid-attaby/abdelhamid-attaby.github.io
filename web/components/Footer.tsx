@@ -2,6 +2,8 @@ import { asset, LINKS } from '@/content/cv';
 import ToptalBadge from './ToptalBadge';
 
 export default function Footer() {
+  const home = asset('/');
+
   return (
     <footer className="footer">
       <div className="shell">
@@ -16,10 +18,11 @@ export default function Footer() {
 
           <div className="footer-links">
             <h4>This site</h4>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
+            <a href={`${home}#about`}>About</a>
+            <a href={`${home}#skills`}>Skills</a>
+            <a href={`${home}#experience`}>Experience</a>
+            <a href={`${home}#projects`}>Projects</a>
+            <a href={`${home}#recommendations`}>Recommendations</a>
             <a href={asset('/chat/')}>Ask my CV</a>
           </div>
 

@@ -5,16 +5,23 @@ const SECTIONS = [
   { href: '#skills', label: 'Skills' },
   { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
+  { href: '#recommendations', label: 'Recs' },
   { href: '#research', label: 'Research' },
   { href: '#contact', label: 'Contact' },
 ];
 
 export default function Masthead() {
+  // Bare "#about" only scrolls when the browser is already on the page that
+  // has an #about element. From /chat/ (a separate exported route) it does
+  // nothing, since there's no #about there — so every section link, and the
+  // logo, must point at the home route explicitly.
+  const home = asset('/');
+
   return (
     <header className="masthead">
       <div className="shell">
         <div className="masthead-in">
-          <a href="#top" className="wordmark">
+          <a href={`${home}#top`} className="wordmark">
             <span className="avatar">
               <img src={asset('/portrait.jpg')} alt="" width={30} height={30} />
             </span>
@@ -23,7 +30,7 @@ export default function Masthead() {
 
           <nav className="nav" aria-label="Sections">
             {SECTIONS.map((s) => (
-              <a key={s.href} href={s.href}>{s.label}</a>
+              <a key={s.href} href={`${home}${s.href}`}>{s.label}</a>
             ))}
           </nav>
 

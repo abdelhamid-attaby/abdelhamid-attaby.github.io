@@ -5,6 +5,7 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Experience from '@/components/Experience';
 import Projects from '@/components/Projects';
+import Recommendations from '@/components/Recommendations';
 import Research from '@/components/Research';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -18,27 +19,31 @@ export default function Home() {
       <main id="main">
         <Hero />
 
-        <Section id="about" label="About" file="about.md">
+        <Section id="about" label="About">
           <About />
         </Section>
 
-        <Section id="skills" label="Skills" file="skills.json" alt>
+        <Section id="skills" label="Skills" alt>
           <Skills />
         </Section>
 
-        <Section id="experience" label="Experience" file="experience.log">
+        <Section id="experience" label="Experience">
           <Experience />
         </Section>
 
-        <Section id="projects" label="Projects" file="projects/" alt>
+        <Section id="projects" label="Projects" alt>
           <Projects />
         </Section>
 
-        <Section id="research" label="Research &amp; education" file="research.bib">
+        <Section id="recommendations" label="Recommendations">
+          <Recommendations />
+        </Section>
+
+        <Section id="research" label="Research &amp; education" alt>
           <Research />
         </Section>
 
-        <Section id="contact" label="Contact" file="contact.sh" alt>
+        <Section id="contact" label="Contact">
           <Contact />
         </Section>
       </main>

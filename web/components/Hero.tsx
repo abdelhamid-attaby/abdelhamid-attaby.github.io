@@ -29,26 +29,20 @@ export default function Hero() {
             </div>
 
             <div className="hero-side">
-              <div className="win">
-                <div className="win-bar">
-                  <div className="win-dots">
-                    <span /><span /><span />
+              <div className="panel">
+                <div className="info-panel">
+                  <div className="info-line avail-line">Open to senior &amp; staff roles</div>
+                  <div className="info-line">
+                    <span className="info-k">Location</span>
+                    <span className="info-v">New Cairo, Egypt</span>
                   </div>
-                  <span className="win-title">whoami.sh</span>
-                </div>
-                <div className="whoami-body">
-                  <div className="whoami-line avail-line">Open to senior &amp; staff roles</div>
-                  <div className="whoami-line">
-                    <span className="whoami-k">location</span>
-                    <span className="whoami-v">New Cairo, Egypt</span>
+                  <div className="info-line">
+                    <span className="info-k">Remote</span>
+                    <span className="info-v">any timezone</span>
                   </div>
-                  <div className="whoami-line">
-                    <span className="whoami-k">remote</span>
-                    <span className="whoami-v">any timezone</span>
-                  </div>
-                  <div className="whoami-line">
-                    <span className="whoami-k">links</span>
-                    <span className="whoami-v">
+                  <div className="info-line">
+                    <span className="info-k">Links</span>
+                    <span className="info-v">
                       <a href={LINKS.linkedin} target="_blank" rel="noreferrer noopener">LinkedIn</a>
                       {' · '}
                       <a href={LINKS.github} target="_blank" rel="noreferrer noopener">GitHub</a>
@@ -63,15 +57,9 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className="shell stats-win">
-        <div className="win">
-          <div className="win-bar">
-            <div className="win-dots">
-              <span /><span /><span />
-            </div>
-            <span className="win-title">career.stats</span>
-          </div>
-          <div className="win-body">
+      <div className="shell stats-panel">
+        <div className="panel">
+          <div className="panel-body">
             <div className="stats">
               {cv.stats.map((s) => (
                 <div className="stat" key={s.label}>

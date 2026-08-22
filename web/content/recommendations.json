@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Helen Hou-Sandi",
+    "initials": "HH",
+    "role": "Open Source Software and Engineering Leader",
+    "context": "Managed Abdelhamid directly at GitHub",
+    "date": "March 2023",
+    "quote": [
+      "I had the pleasure of working with Abdelhamid for several years and I highly recommend him for any future endeavors. He is a skilled software engineer who worked at a high level in multiple technologies during his time at GitHub, including React, Next.js, Terraform, golang, Ruby on Rails, and various Azure services.",
+      "Throughout our time working together, I was consistently impressed by Abdelhamid's exceptional technical knowledge and ability to bring new ideas and solutions even when requirements were not fully defined. I was his manager through some tough times of many changes, during which he served as a valuable member of the Special Projects and Docs Engineering teams, where he demonstrated excellent communication skills and a proactive approach to tackling challenges. He always asked sharp questions and had a positive attitude about picking up work in areas that were new to him, quickly demonstrating his grasp of the areas by suggesting other work and improvements. I appreciated his honesty and candor when it came to providing professional feedback, which was always well thought out and constructive. Overall, Abdelhamid is a true team player and a valuable asset to any organization."
+    ]
+  },
+  {
+    "name": "Tina Barfield",
+    "initials": "TB",
+    "role": "Senior Manager, Software Engineering at GitHub",
+    "context": "Senior to Abdelhamid at GitHub",
+    "date": "March 2023",
+    "quote": [
+      "It has been an absolute pleasure to work with Abdelhamid in his role as a Senior Software Engineer at GitHub. His ability to jump into a project, offer well thought out solutions, and drive it to completion, has led to many successes for the team. Abdelhamid is a skilled Engineer with a broad toolbox of knowledge and skills and I highly recommend him for any future endeavors."
+    ]
+  },
+  {
+    "name": "Sara Vilas",
+    "initials": "SV",
+    "role": "Mexico Country Manager at Canva",
+    "context": "Worked with Abdelhamid on the same team at GitHub",
+    "date": "October 2021",
+    "quote": [
+      "I really enjoyed working with Abdelhamid. He has very deep and strong expertise in backend development. He constantly strived for scalability and quality for what he and his team were doing. As a designer on the team, I always felt comfortable asking questions to him and working together to achieve the best possible User Experience.",
+      "On top of that, he was a great human to have around! He always had a smile on and created a fun work vibe."
+    ]
+  },
+  {
+    "name": "Fady Derias",
+    "initials": "FD",
+    "role": "Senior iOS Engineer",
+    "context": "Reported to Abdelhamid directly at Aster",
+    "date": "October 2021",
+    "quote": [
+      "Abdelhamid & I worked together at Aster with him being the CTO. He has great Engineering knowledge & expertise on how to efficiently deliver qualitative deliverables on the time set. He's skilled when it comes to managing different squads / teams and keeping up the positive spirit & vibes. It's always a pleasure to have a chat / talk with him given his friendly character & leadership."
+    ]
+  },
+  {
+    "name": "Muhammad Magdi",
+    "initials": "MM",
+    "role": "Software Engineering Lead",
+    "context": "Reported to Abdelhamid directly",
+    "date": "October 2021",
+    "quote": [
+      "Although it wasn't a long period of working together, I believe I've learned a lot from Dr. Abdelhamid compared to this short period.",
+      "Dr. Abdelhamid isn't only good at Development, but I realized that he is also great at Planning, Analysis, and — of course — management.",
+      "Last but not least, I'll certainly miss working with him every day. I have only optimistic predictions for his future steps."
+    ]
+  },
+  {
+    "name": "Abhishek Nath",
+    "initials": "AN",
+    "role": "Engineering Manager, Meta (Reality Labs)",
+    "context": "Managed Abdelhamid directly at Simple Habit",
+    "date": "June 2020",
+    "quote": [
+      "Attaby worked with Simple Habit from a different continent and in a different timezone. Yet you would not know that from the type of contribution he made at Simple Habit.",
+      "Starting from his first week at the company, he was shipping features quickly while making sure he was leaving the code base in a better place than he found it. He was not shy about pushing the team to improve our engineering practices or tooling and I think the company was in a better place for it.",
+      "Another quality I found admirable was his ability and eagerness to pick up unfamiliar technology stacks. For a senior engineer he was uniquely adaptable and humble. Finally add in to the mix that the fact that he has really strong product sense and its easy to recommend Attaby as an engineering leader anywhere."
+    ]
+  }
+]
