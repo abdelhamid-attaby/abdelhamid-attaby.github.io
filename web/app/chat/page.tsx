@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import Masthead from '@/components/Masthead';
+import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 import ChatPage from '@/components/ChatPage';
 
@@ -12,12 +12,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <Masthead />
-      <main id="main">
+    <div className="app">
+      <Sidebar />
+      <main id="main" className="main">
         <ChatPage />
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }

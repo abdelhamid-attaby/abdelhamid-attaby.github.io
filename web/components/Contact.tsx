@@ -31,7 +31,7 @@ export default function Contact() {
       <div className="section-head">
         <h2 className="h2">Let&rsquo;s talk.</h2>
         <p>
-          Remote, any timezone. Open to senior and staff engineering, AI
+          Remote, any timezone. Open to staff and senior engineering, AI
           engineering, and technical leadership.
         </p>
       </div>
@@ -112,7 +112,7 @@ export default function Contact() {
           <div className="fact">
             <span className="fact-k">Open to</span>
             <span className="fact-v">
-              Senior &amp; staff engineering · AI engineering · Technical leadership
+              Staff &amp; senior engineering · AI engineering · Technical leadership
             </span>
           </div>
           <div className="fact">

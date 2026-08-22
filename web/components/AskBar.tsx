@@ -80,7 +80,6 @@ export default function AskBar() {
               <label htmlFor="askbar-input" className="skip">
                 Ask a question about Abdelhamid&rsquo;s experience
               </label>
-              <span className="askbar-prompt" aria-hidden="true">$</span>
               <input
                 id="askbar-input"
                 value={draft}

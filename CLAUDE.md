@@ -54,20 +54,35 @@ budget. Check `api/lib/rateLimit.ts` before proposing one.
 breaks the site silently. `api/lib/openrouter.ts` resolves the chain at runtime
 against `/api/v1/models` filtered to `pricing.prompt === "0"`.
 
-**5. Design constraints are not preferences.** As of 2026-08-20 (later
-revision) the site is a "restrained dark IDE" theme: one monospace family
-(JetBrains Mono), a dark canvas, one accent colour (`--accent`, neutral blue),
-and `.panel` (hairline border + padded body, **no header row**) as the *only*
-sanctioned structural device besides the 12-column grid — never a
-drop-shadowed card. The chat (`.chat-win`) is the sole exception that keeps a
-header/status-dot and a stronger accent border, deliberately, to stay more
-visible than read-only content. Border-radius is otherwise disallowed outside
-panels, the avatar circle, and small controls (buttons/inputs, ≤4px), and
-decorative prompt glyphs (`//`, `~/`, `$`, `#`, `>`) are scoped to the chat
-only — repeating them on every section is what made an earlier same-day
-"modern dev terminal" revision read as templated. Constraints are documented
-at the top of `web/app/globals.css`. (Two earlier themes preceded this one —
-see git history around 2026-08-20 if you need either rule set.)
+**5. Design constraints are not preferences.** As of 2026-08-22 the site is a
+"fancy tech console" theme, modeled on a reference the candidate supplied
+(a bslthemes CV template): a dark navy canvas with a faint decorative
+circuit-pattern texture (`public/circuit.svg`, applied fixed and full-bleed,
+`pointer-events: none`), a drifting ambient-light layer (`.bg-lights` in
+`app/layout.tsx` — three blurred, animated circles, all the one accent colour
+plus one desaturated neutral, so it reads as atmosphere rather than a second
+palette), a fixed icon sidebar for navigation (`Sidebar.tsx`, replacing the
+old top masthead), and `.card` (a rounded panel — generous `border-radius`,
+no header row) as the sanctioned structural device. Unlike every earlier
+revision, **cards, icons and rounded corners are explicitly wanted here** —
+do not flatten them back down. One accent colour (`--accent`, neon green)
+stays the rule; icons come from the hand-rolled set in `components/Icons.tsx`,
+never an icon font or a third-party package. The hero photo card carries a
+small decorative "terminal" (`.hero-terminal` in `Hero.tsx`) tucked behind the
+avatar — fixed text, a CSS width-reveal loop fakes the typing, not a live
+shell; both it and `.bg-lights` are frozen by the existing global
+`prefers-reduced-motion` rule, nothing extra needed. The Projects grid prefers
+a real screenshot of the product/company site (`public/work/*.jpg`,
+`projects.json`'s `image` field, cropped to 16:10 — see git history
+2026-08-22 for the Playwright-capture-then-crop recipe) and falls back to the
+icon-over-gradient cover only when no live site exists to screenshot (Bardy,
+Grow Healthy, Aster, WiPi, Coligo, AYR — the last two had a real site once but
+it's gone dark; don't fabricate a cover for a dead domain). The one
+architecture diagram (Flowdia, in `Projects.tsx`) illustrates a real described
+process, not an invented one — keep every visual honest the same way.
+Constraints are documented at the top of `web/app/globals.css`. (Three earlier
+themes preceded this one — see git history around 2026-08-20/22 if you need
+any of their rule sets.)
 
 **6. Only claim what the CV evidences.** Skills and bullets come from
 `cv_data.json`. Do not add a technology to the skills table because it would
@@ -101,8 +116,6 @@ procedure if it ever changes.
   removal not a visual cover), LinkedIn/GitHub/Scholar kept. It is **not**
   regenerated automatically: if the master CV changes, re-redact and replace
   it by hand.
-- `meta.scholar_url` in `cv_data.json` points at scholar.google.com generally,
-  not his profile.
 - The OpenRouter key was pasted into a chat on 20 Aug 2026 and should be
   rotated, with the replacement capped at $0 credit so it can only ever reach
   `:free` models.

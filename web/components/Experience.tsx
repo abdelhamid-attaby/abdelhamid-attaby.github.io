@@ -19,37 +19,31 @@ export default function Experience() {
         <h2 className="h2">Fifteen years, shipped.</h2>
       </div>
 
-      <div>
-        {roles.map((job, i) => {
+      <div className="timeline">
+        {roles.map((job) => {
           const { to } = splitPeriod(job.period);
           const current = to.toLowerCase() === 'present';
           return (
-            <article className="job" key={`${job.company}-${job.period}`}>
-              <div className="job-when num">
-                {current && <b>Now</b>}
-                {job.period}
-                {job.context && (
-                  <div style={{ marginTop: 6, color: 'var(--ink-4)' }}>{job.context}</div>
-                )}
-              </div>
+            <article className={current ? 'tl-item current' : 'tl-item'} key={`${job.company}-${job.period}`}>
+              <span className="tl-dot" aria-hidden="true" />
+              <span className="badge num">{job.period}</span>
 
-              <div>
-                <h3 className="job-role">{job.role}</h3>
-                <p className="job-co">
-                  {job.url ? (
-                    <a href={job.url} target="_blank" rel="noreferrer noopener">
-                      {job.company}
-                    </a>
-                  ) : (
-                    job.company
-                  )}
-                </p>
-                <ul>
-                  {job.bullets.map((b, j) => (
-                    <li key={j}>{b}</li>
-                  ))}
-                </ul>
-              </div>
+              <h3 className="tl-role">{job.role}</h3>
+              <p className="tl-co">
+                {job.url ? (
+                  <a href={job.url} target="_blank" rel="noreferrer noopener">
+                    {job.company}
+                  </a>
+                ) : (
+                  job.company
+                )}
+                {job.context ? ` · ${job.context}` : ''}
+              </p>
+              <ul>
+                {job.bullets.map((b, j) => (
+                  <li key={j}>{b}</li>
+                ))}
+              </ul>
             </article>
           );
         })}

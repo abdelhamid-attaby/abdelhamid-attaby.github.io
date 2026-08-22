@@ -48,7 +48,7 @@ export const asset = (path: string) => `${BASE_PATH}${path}`;
 
 export const SITE = {
   url: `https://abdelhamid-attaby.github.io${BASE_PATH}`,
-  title: 'Abdelhamid Attaby — Senior Software Engineer, Ph.D.',
+  title: 'Abdelhamid Attaby — Staff Software Engineer, Ph.D.',
   description:
-    'Senior software engineer with 15+ years building large-scale systems, including two years at GitHub (Microsoft). Twice CTO. Now building production multi-agent AI systems. Ask my CV anything.',
+    'Staff software engineer with 15+ years building large-scale systems, including two years at GitHub (Microsoft). Twice CTO. Now building production multi-agent AI systems. Open to Staff and Senior roles. Ask my CV anything.',
 };

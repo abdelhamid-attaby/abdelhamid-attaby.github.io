@@ -6,7 +6,8 @@
     "period": "2025 — present",
     "description": "A platform where a team of specialised AI agents plans, designs, builds and ships production web apps end to end, each with a real backend, a dedicated PostgreSQL database and APIs. I build the agent orchestration and LLM integration layer, and the system that turns natural-language product intent into deployed applications with memory that persists across sessions.",
     "stack": ["Elixir", "TypeScript", "Node.js", "PostgreSQL", "Agent orchestration", "LLM APIs"],
-    "links": [{ "label": "flowdia.ai", "href": "https://flowdia.ai" }]
+    "links": [{ "label": "flowdia.ai", "href": "https://flowdia.ai" }],
+    "image": "/work/flowdia.jpg"
   },
   {
     "title": "GitHub Projects",
@@ -15,16 +16,8 @@
     "period": "2021 — 2023",
     "description": "The planning and tracking experience used by organisations and developers worldwide. I shipped saved views, user-owned projects, the project GraphQL APIs, fast issues, the iterations field and the issue sidebar — inside the github/github monolith, alongside large-scale performance work and distributed data migrations across hundreds of millions of records.",
     "stack": ["Ruby on Rails", "Go", "GraphQL", "React", "TypeScript", "MobX"],
-    "links": [{ "label": "github.com/features/issues", "href": "https://github.com/features/issues" }]
-  },
-  {
-    "title": "Bardy",
-    "subtitle": "Visual feedback and collaboration",
-    "role": "Co-founder",
-    "period": "2023 — 2025",
-    "description": "Comment directly on live websites, videos, PDFs and images, edit HTML and CSS in place, and capture screenshots automatically — delivered as a web app and a Chrome extension on a multi-tenant SaaS. Built end to end as one of two co-founders. We wound the company down in late 2025 when traction did not materialise.",
-    "stack": ["Elixir", "React", "Chrome Extension", "AWS Lambda", "Terraform"],
-    "links": []
+    "links": [{ "label": "github.com/features/issues", "href": "https://github.com/features/issues" }],
+    "image": "/work/github-projects.jpg"
   },
   {
     "title": "Grow Healthy",
@@ -33,6 +26,66 @@
     "period": "2019 — 2020",
     "description": "Led the frontend and backend teams building and deploying a healthcare delivery platform. Order processing ran on Firestore, Scheduler, Pub/Sub and Cloud Functions, with Twilio, OnFleet, Zendesk and Google Maps integrated, Jest unit and end-to-end coverage, and automated deployments through GitHub Actions.",
     "stack": ["Node.js", "Google Cloud", "Firestore", "Pub/Sub", "Twilio"],
+    "links": [{ "label": "growhealthy.com", "href": "https://growhealthy.com/locations/" }],
+    "image": "/work/growhealthy.jpg"
+  },
+  {
+    "title": "Wuilt",
+    "subtitle": "SaaS website and store builder",
+    "role": "VP of Engineering",
+    "period": "2021 — 2022",
+    "description": "Set engineering strategy and technical direction at a regional SaaS website-building company, partnering with leadership on roadmap and execution. Architected core platforms from the ground up and established engineering standards, delivery processes and CI/CD, and built and scaled the engineering team through hiring, mentoring and code review.",
+    "stack": ["SaaS", "CI/CD", "Engineering leadership"],
+    "links": [{ "label": "wuilt.com", "href": "https://wuilt.com" }],
+    "image": "/work/wuilt.jpg"
+  },
+  {
+    "title": "Simple Habit",
+    "subtitle": "Meditation app (San Francisco)",
+    "role": "Senior Consultant, via Andela",
+    "period": "2020",
+    "description": "Senior engineer for Simple Habit, Inc., shipping a high-quality meditation product through engineering best practices. Also designed and conducted technical interviews for senior and principal candidates, and mentored mid-level and senior engineers.",
+    "stack": ["Consulting", "Technical interviewing", "Mentoring"],
+    "links": [{ "label": "simplehabit.com", "href": "https://simplehabit.com" }],
+    "image": "/work/simplehabit.jpg"
+  },
+  {
+    "title": "Coligo Technologies",
+    "subtitle": "EdTech learning management system",
+    "role": "Co-founder & Chief Technology Officer",
+    "period": "2016 — 2019",
+    "description": "Co-founded an EdTech company and designed the core architecture of its learning management system. Directed cross-platform engineering across web, Android and iOS through an Agile process, and built fully automated CI/CD pipelines for containerized applications.",
+    "stack": ["LMS", "Android", "iOS", "Docker", "CI/CD"],
+    "links": [{ "label": "coligolms.com", "href": "https://coligolms.com/login" }],
+    "image": "/work/coligo.jpg"
+  },
+  {
+    "title": "Zyda",
+    "subtitle": "Digital ordering and customer engagement platform",
+    "role": "Freelance Engineer",
+    "period": "",
+    "description": "Managed four development teams — checkout, product catalogs, marketing integrations, and the new storefront — for a digital ordering and customer engagement platform used by restaurants and retailers.",
+    "stack": ["E-commerce", "Team leadership"],
+    "links": [{ "label": "zyda.com", "href": "https://zyda.com/" }],
+    "image": "/work/zyda.jpg"
+  },
+  {
+    "title": "Serveedo",
+    "subtitle": "Fleet maintenance platform",
+    "role": "Node.js Back-end Engineer, via Toptal (BeatFlyer)",
+    "period": "2019",
+    "description": "Built RESTful APIs for a fleet-maintenance platform used by mobility operators to manage vehicle upkeep at scale — mobile-based maintenance assistance, spare-parts tracking, and task routing for drivers, with multiple authentication schemes and Jest coverage.",
+    "stack": ["Node.js", "REST APIs", "Jest", "Fleet management"],
+    "links": [{ "label": "serveedo.com", "href": "https://serveedo.com/" }],
+    "image": "/work/serveedo.jpg"
+  },
+  {
+    "title": "Bardy",
+    "subtitle": "Visual feedback and collaboration",
+    "role": "Co-founder",
+    "period": "2023 — 2025",
+    "description": "Comment directly on live websites, videos, PDFs and images, edit HTML and CSS in place, and capture screenshots automatically — delivered as a web app and a Chrome extension on a multi-tenant SaaS. Built end to end as one of two co-founders. We wound the company down in late 2025 when traction did not materialise.",
+    "stack": ["Elixir", "React", "Chrome Extension", "AWS Lambda", "Terraform"],
     "links": []
   },
   {
@@ -45,15 +98,6 @@
     "links": []
   },
   {
-    "title": "Wuilt",
-    "subtitle": "SaaS website and store builder",
-    "role": "VP of Engineering",
-    "period": "2021 — 2022",
-    "description": "Set engineering strategy and technical direction at a regional SaaS website-building company, partnering with leadership on roadmap and execution. Architected core platforms from the ground up and established engineering standards, delivery processes and CI/CD, and built and scaled the engineering team through hiring, mentoring and code review.",
-    "stack": ["SaaS", "CI/CD", "Engineering leadership"],
-    "links": [{ "label": "wuilt.com", "href": "https://wuilt.com" }]
-  },
-  {
     "title": "Aster",
     "subtitle": "Fintech wealth-aggregation platform",
     "role": "Chief Technology Officer",
@@ -61,33 +105,6 @@
     "description": "Led the engineering team delivering product requirements, set technical strategy with leadership, and owned the team budget and tooling. Architected the backend on a microservices model and built APIs aggregating users' wealth into dashboards and charts, integrating numerous third-party financial APIs to extend platform capability.",
     "stack": ["Microservices", "APIs", "Fintech integrations"],
     "links": []
-  },
-  {
-    "title": "Simple Habit",
-    "subtitle": "Meditation app (San Francisco)",
-    "role": "Senior Consultant, via Andela",
-    "period": "2020",
-    "description": "Senior engineer for Simple Habit, Inc., shipping a high-quality meditation product through engineering best practices. Also designed and conducted technical interviews for senior and principal candidates, and mentored mid-level and senior engineers.",
-    "stack": ["Consulting", "Technical interviewing", "Mentoring"],
-    "links": [{ "label": "simplehabit.com", "href": "https://simplehabit.com" }]
-  },
-  {
-    "title": "Coligo Technologies",
-    "subtitle": "EdTech learning management system",
-    "role": "Co-founder & Chief Technology Officer",
-    "period": "2016 — 2019",
-    "description": "Co-founded an EdTech company and designed the core architecture of its learning management system. Directed cross-platform engineering across web, Android and iOS through an Agile process, and built fully automated CI/CD pipelines for containerized applications.",
-    "stack": ["LMS", "Android", "iOS", "Docker", "CI/CD"],
-    "links": [{ "label": "coligotech.com", "href": "https://coligotech.com" }]
-  },
-  {
-    "title": "Zyda",
-    "subtitle": "Digital ordering and customer engagement platform",
-    "role": "Freelance Engineer",
-    "period": "",
-    "description": "Managed four development teams — checkout, product catalogs, marketing integrations, and the new storefront — for a digital ordering and customer engagement platform used by restaurants and retailers.",
-    "stack": ["E-commerce", "Team leadership"],
-    "links": [{ "label": "zyda.com", "href": "https://zyda.com/" }]
   },
   {
     "title": "AYR",

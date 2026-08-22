@@ -1,7 +1,7 @@
 [
   {
     "name": "Helen Hou-Sandi",
-    "initials": "HH",
+    "photo": "/recommendations/helen.jpg",
     "role": "Open Source Software and Engineering Leader",
     "context": "Managed Abdelhamid directly at GitHub",
     "date": "March 2023",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Tina Barfield",
-    "initials": "TB",
+    "photo": "/recommendations/tina.jpg",
     "role": "Senior Manager, Software Engineering at GitHub",
     "context": "Senior to Abdelhamid at GitHub",
     "date": "March 2023",
@@ -22,7 +22,7 @@
   },
   {
     "name": "Sara Vilas",
-    "initials": "SV",
+    "photo": "/recommendations/sara.png",
     "role": "Mexico Country Manager at Canva",
     "context": "Worked with Abdelhamid on the same team at GitHub",
     "date": "October 2021",
@@ -33,7 +33,7 @@
   },
   {
     "name": "Fady Derias",
-    "initials": "FD",
+    "photo": "/recommendations/fady.jpg",
     "role": "Senior iOS Engineer",
     "context": "Reported to Abdelhamid directly at Aster",
     "date": "October 2021",
@@ -43,7 +43,7 @@
   },
   {
     "name": "Muhammad Magdi",
-    "initials": "MM",
+    "photo": "/recommendations/muhammad.jpg",
     "role": "Software Engineering Lead",
     "context": "Reported to Abdelhamid directly",
     "date": "October 2021",
@@ -55,7 +55,7 @@
   },
   {
     "name": "Abhishek Nath",
-    "initials": "AN",
+    "photo": "/recommendations/abhishek.jpg",
     "role": "Engineering Manager, Meta (Reality Labs)",
     "context": "Managed Abdelhamid directly at Simple Habit",
     "date": "June 2020",

@@ -2,7 +2,7 @@
   "meta": {
     "name": "Abdelhamid Attaby",
     "credential": "Ph.D.",
-    "title": "Senior Software Engineer",
+    "title": "Staff Software Engineer",
     "tagline": "Distributed Systems · Technical Leadership · AI & Agent Engineering",
     "location": "New Cairo, Egypt",
     "remote": "Remote · any timezone",
@@ -11,7 +11,7 @@
     "linkedin": "https://www.linkedin.com/in/abdelhamidattaby/",
     "github": "https://github.com/abdelhamid-attaby",
     "scholar": "Google Scholar · 124 citations",
-    "scholar_url": "https://scholar.google.com/"
+    "scholar_url": "https://scholar.google.com/citations?user=K1KmzBgAAAAJ"
   },
   "stats": [
     { "value": "15+", "label": "Years engineering" },
@@ -19,7 +19,7 @@
     { "value": "2 yrs", "label": "GitHub (Microsoft)" },
     { "value": "124", "label": "Scholar citations" }
   ],
-  "about": "Senior software engineer with 15+ years building, shipping, and operating medium-to-large-scale applications, including two years at GitHub (Microsoft) contributing to one of the world's largest monolithic codebases. Since 2023, I've channeled that experience into startups and applied AI — co-founding an early-stage venture and serving as a founding engineer on a multi-agent AI application platform — building production agentic-AI products hands-on. Full-stack strength across Node.js, TypeScript, Ruby on Rails, React, Go, and Elixir, with deep experience in microservices, distributed systems, API design, and CI/CD, and a daily AI-assisted engineering practice. A proven technical leader — twice CTO — who has architected platforms, led engineering teams, and mentored engineers from early-career to senior. I hold M.Sc. and Ph.D. degrees in Computer Science and Engineering and am pursuing an MBA (AAST).",
+  "about": "Staff-level software engineer with 15+ years building, shipping, and operating medium-to-large-scale applications, including two years at GitHub (Microsoft) contributing to one of the world's largest monolithic codebases. Since 2023, I've channeled that experience into startups and applied AI — co-founding an early-stage venture and serving as a founding engineer on a multi-agent AI application platform — building production agentic-AI products hands-on. Full-stack strength across Node.js, TypeScript, Ruby on Rails, React, Go, and Elixir, with deep experience in microservices, distributed systems, API design, and CI/CD, and a daily AI-assisted engineering practice. A proven technical leader — twice CTO — who has architected platforms, led engineering teams, and mentored engineers from early-career to senior. I hold M.Sc. and Ph.D. degrees in Computer Science and Engineering and am pursuing an MBA (AAST). Open to Staff and Senior Software Engineer roles.",
   "strengths": [
     {
       "icon": "network",
@@ -43,13 +43,13 @@
     }
   ],
   "skills": {
-    "Languages": ["JavaScript", "TypeScript", "Python", "Go", "Ruby", "Elixir", "PHP", "C#"],
-    "Backend": ["Node.js", "Express", "NestJS", "Phoenix (Elixir)", "Ruby on Rails", "Django", "Flask", "Laravel", "REST", "GraphQL", "Socket.IO", "Stripe", "Twilio"],
-    "Frontend": ["React", "Next.js", "React Native", "Android", "Redux", "MobX", "HTML5", "CSS3"],
-    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "Microsoft SQL", "Redis", "Firebase", "Firestore"],
-    "Cloud & DevOps": ["AWS", "Google Cloud", "Azure", "Docker", "Kubernetes", "Terraform", "Serverless", "Nginx", "Cloudflare", "CI/CD", "Datadog", "Sentry", "Linux"],
-    "AI / LLM": ["Claude", "Claude Code", "Claude API", "LLM APIs", "AI agents & agentic AI", "Agent orchestration", "Agentic coding", "LLM-assisted engineering"],
-    "Practices": ["Microservices", "Event-driven systems", "Kafka", "RabbitMQ", "NATS", "Pub/Sub", "Protobuf", "SaaS", "Software architecture", "Automated testing", "Agile/Scrum", "Mentoring"]
+    "Languages": ["JavaScript", "TypeScript", "Python", "Go", "Ruby", "Elixir", "PHP", "C#", "SQL", "HTML5", "CSS3"],
+    "Backend": ["Node.js", "Express", "NestJS", "Phoenix (Elixir)", "Ruby on Rails", "Django", "Flask", "Laravel", "REST", "GraphQL", "Socket.IO", "Stripe", "Twilio", "SendGrid", "Prisma", "Sequelize", "Mongoose", "Apollo Server", "JWT", "Passport.js", "Swagger", "Strapi"],
+    "Frontend": ["React", "Next.js", "React Native", "Android", "Redux", "MobX", "Material UI", "Tailwind CSS", "Bootstrap", "Styled-components", "Gatsby", "Expo", "Storybook"],
+    "Databases": ["PostgreSQL", "MongoDB", "MySQL", "Microsoft SQL Server", "Redis", "Firebase", "Firestore", "Amazon RDS", "Amazon S3"],
+    "Cloud & DevOps": ["AWS", "Google Cloud", "Azure", "Docker", "Kubernetes", "Terraform", "Serverless", "Nginx", "Cloudflare", "CI/CD", "Datadog", "Sentry", "Linux", "AWS Lambda", "Amazon EC2", "Amazon EKS", "Amazon CloudFront", "Amazon Route 53", "Amazon API Gateway", "Kong", "Helm", "GitLab CI/CD", "CircleCI", "DigitalOcean", "Heroku", "Netlify", "Vercel"],
+    "AI / LLM": ["Claude", "Claude Code", "Claude API", "GitHub Copilot", "ChatGPT", "Cursor AI", "LLM APIs", "AI agents & agentic AI", "Agent orchestration", "Agentic coding", "LLM-assisted engineering"],
+    "Practices": ["Microservices", "Event-driven systems", "Kafka", "RabbitMQ", "NATS", "Pub/Sub", "Protobuf", "SaaS", "Software architecture", "Automated testing", "Jest", "Cypress", "ESLint", "Git", "Jira", "Agile/Scrum", "Scrum Master", "Mentoring", "Technical leadership"]
   },
   "experience": [
     {
@@ -166,7 +166,7 @@
       "period": "2011 – 2019",
       "context": "",
       "bullets": [
-        "Node.js Back-end Engineer (BeatFlyer, via Toptal, 2019): built RESTful APIs for a fleet-management platform with multiple authentication schemes and Jest coverage.",
+        "Node.js Back-end Engineer (BeatFlyer, via Toptal, 2019): built RESTful APIs for Serveedo, a fleet-management platform, with multiple authentication schemes and Jest coverage.",
         "Freelance Engineer (Zyda): managed four development teams — checkout, product catalogs, marketing integrations, and the new storefront — for a digital ordering and customer engagement platform.",
         "Freelance Engineer (AYR, via Toptal): participated in launching eight websites across the AYR Wellness family of cannabis retail brands, including Liberty Health Sciences, AYR New Jersey, Sira Naturals, AYR Massachusetts, and Mynt Cannabis.",
         "Software Engineer (So Visions, 2012–2014): developed accounting, purchasing, inventory, and sales modules of a full ERP system.",

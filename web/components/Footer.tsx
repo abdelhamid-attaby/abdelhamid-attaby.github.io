@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <h4>Abdelhamid Attaby</h4>
             <p className="footer-say">
-              Senior software engineer, Ph.D. Distributed systems, technical
+              Staff software engineer, Ph.D. Distributed systems, technical
               leadership, and the engineering behind AI agents.
             </p>
           </div>
@@ -19,7 +19,6 @@ export default function Footer() {
           <div className="footer-links">
             <h4>This site</h4>
             <a href={`${home}#about`}>About</a>
-            <a href={`${home}#skills`}>Skills</a>
             <a href={`${home}#experience`}>Experience</a>
             <a href={`${home}#projects`}>Projects</a>
             <a href={`${home}#recommendations`}>Recommendations</a>
