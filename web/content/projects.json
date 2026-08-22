@@ -80,6 +80,16 @@
     "image": "/work/serveedo.jpg"
   },
   {
+    "title": "AYR",
+    "subtitle": "Cannabis retail, multi-brand storefronts",
+    "role": "Freelance Engineer",
+    "period": "via Toptal",
+    "description": "Participated in launching eight websites across the AYR Wellness family of cannabis retail brands, including Liberty Health Sciences, AYR New Jersey, Sira Naturals, AYR Massachusetts, and Mynt Cannabis.",
+    "stack": ["Multi-brand web launches"],
+    "links": [{ "label": "ayrdispensaries.com", "href": "https://ayrdispensaries.com/" }],
+    "image": "/work/ayr.jpg"
+  },
+  {
     "title": "Bardy",
     "subtitle": "Visual feedback and collaboration",
     "role": "Co-founder",
@@ -105,14 +115,5 @@
     "description": "Led the engineering team delivering product requirements, set technical strategy with leadership, and owned the team budget and tooling. Architected the backend on a microservices model and built APIs aggregating users' wealth into dashboards and charts, integrating numerous third-party financial APIs to extend platform capability.",
     "stack": ["Microservices", "APIs", "Fintech integrations"],
     "links": []
-  },
-  {
-    "title": "AYR",
-    "subtitle": "Cannabis retail, multi-brand storefronts",
-    "role": "Freelance Engineer",
-    "period": "via Toptal",
-    "description": "Participated in launching eight websites across the AYR Wellness family of cannabis retail brands, including Liberty Health Sciences, AYR New Jersey, Sira Naturals, AYR Massachusetts, and Mynt Cannabis.",
-    "stack": ["Multi-brand web launches"],
-    "links": [{ "label": "ayrdispensaries.com", "href": "https://ayrdispensaries.com/" }]
   }
 ]
